@@ -23,7 +23,7 @@ form.addEventListener('submit', async function (e) {
     };
 
     try {
-        const response = await fetch('YOUR_GOOGLE_APPS_SCRIPT_URL', {
+        const response = await fetch('https://script.google.com/macros/s/AKfycbyk0jO4jrmByUhxDFb1fcx_DzV6cbLu9puhboIi6cgm_6whx1fzFHceOork5XfyL6BBqA/exec', {
             method: 'POST',
             body: JSON.stringify(formData),
             headers: { 'Content-Type': 'application/json' },
