@@ -39,3 +39,18 @@ form.addEventListener('submit', async function (e) {
         alert('An error occurred while submitting the report.');
     }
 });
+
+fetch('https://script.google.com/macros/s/AKfycbyk0jO4jrmByUhxDFb1fcx_DzV6cbLu9puhboIi6cgm_6whx1fzFHceOork5XfyL6BBqA/exec', {
+    method: 'POST',
+    body: JSON.stringify({
+        rumor: 'Test Rumor',
+        type: 'Political',
+        location: 'Test Location',
+        datetime: '2025-04-15T12:00',
+        email: 'test@example.com'
+    }),
+    headers: { 'Content-Type': 'application/json' },
+})
+.then(response => response.text())
+.then(data => console.log(data))
+.catch(error => console.error('Error:', error));
