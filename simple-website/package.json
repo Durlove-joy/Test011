@@ -1,0 +1,14 @@
+{
+  "name": "simple-website",
+  "version": "1.0.0",
+  "description": "A simple website to report issues with a map background.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "live-server src"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
